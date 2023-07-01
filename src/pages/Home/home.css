@@ -1,0 +1,22 @@
+.banner-bg{
+    background: url("../../assets/img/hrlimon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+
+}
+
+.spin{
+    animation: spin 10s linear infinite;
+
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
