@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 // import CommonBtn from '../pages/components/Common-btn/CommonBtn'
 import logo from '../assets/img/Screenshot_2023-07-01_144021-removebg-preview (1).png'
 import {AiOutlineMenuUnfold} from 'react-icons/ai'
+import Banner from '../pages/Home/components/Banner'
 
 
 
@@ -15,8 +16,8 @@ const Navbar = () => {
   return (
     <>
     
-<div className="bg-gray-50">
-	<nav className="relative px-4 lg:px-0 py-2 max-w-7xl mx-auto flex justify-between  items-center">
+<div className="relative">
+	<nav className="absolute z-10 px-4 lg:px-0 py-2 left-0 right-0 max-w-7xl mx-auto flex justify-between  items-center">
 		<Link to='/' className="" >
 			<img className='w-52' src={logo} alt="" />
          
@@ -90,6 +91,13 @@ const Navbar = () => {
 		</nav>
 	</div>
   }
+
+
+ <div className=" -z-10 top-0 left-0 right-0">
+ <Banner></Banner>
+ </div>
+
+
 
 
 

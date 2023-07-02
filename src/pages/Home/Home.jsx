@@ -1,11 +1,11 @@
-import Banner from "./components/Banner"
-
+import Company from "./components/Company/Company"
 
 const Home = () => {
   return (
     <>
 
-    <Banner></Banner>
+    <Company></Company>
+    
 
     </>
   )

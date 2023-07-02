@@ -9,11 +9,9 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar/>
 
-      <Banner></Banner>
-  
-    <Outlet></Outlet>
+    <Outlet/>
     
   {/* <div className="bg-gray-800 mx-auto py-5">
   <h2 className='text-white text-center font-bold'>footer</h2>
