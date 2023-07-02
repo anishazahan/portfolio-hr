@@ -3,7 +3,6 @@ import {data} from './companyImg.js'
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
@@ -14,18 +13,16 @@ const Company = () => {
     <div className='max-w-6xl pb-20 px-5 lg:px-0 mx-auto '>
            <Swiper
         spaceBetween={30}
+        loop={true}
         centeredSlides={true}
         slidesPerView={2}
         
         autoplay={{
           delay: 1000,
-          
+          loop:true,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-          loop:true,
-        }}
+       
         breakpoints={{
           640: {
             slidesPerView: 3,

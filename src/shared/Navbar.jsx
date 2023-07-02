@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <>
     
-<div className="relative">
-	<nav className="absolute z-10 px-4 lg:px-0 py-2 left-0 right-0 max-w-7xl mx-auto flex justify-between  items-center">
+<div className="">
+	<nav className=" z-10 px-4 lg:px-0 py-2  max-w-7xl mx-auto flex justify-between  items-center">
 		<Link to='/' className="" >
 			<img className='w-52' src={logo} alt="" />
          
@@ -33,7 +33,7 @@ const Navbar = () => {
 			
 			<li><NavLink to='/books'  className={({ isActive }) => (isActive ? 'border-b-2 border-secondary font-semibold text-[17px] text-black hover:text-secondary ' : 'font-semibold text-[17px] text-black hover:text-secondary') } >Success Stories</NavLink></li>
 
-			<li><NavLink to='/about'  className={({ isActive }) => (isActive ? 'border-b-2 border-secondary font-semibold text-[17px] text-black hover:text-secondary ' : 'font-semibold text-[17px] text-black hover:text-secondary') } >About Me</NavLink></li>
+			<li><NavLink to='#aboutme'  className={({ isActive }) => (isActive ? 'border-b-2 border-secondary font-semibold text-[17px] text-black hover:text-secondary ' : 'font-semibold text-[17px] text-black hover:text-secondary') } >About Me</NavLink></li>
 		
 			<li><NavLink to='/contact'  className={({ isActive }) => (isActive ? 'border-b-2 border-secondary ' : 'font-bold text-[17px] text-black hover:text-secondary') } >Contact</NavLink></li>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
 
             <div className="">
 	{/* <CommonBtn></CommonBtn> */}
-    <button className='py-3 px-6'>Go To YT </button>
+    <button className='py-3 px-8 hover:bg-white hover:border hover:border-black hover:text-black duration-200 bg-black text-white font-medium'>Go To YT </button>
 		</div>
 		</ul>
 
