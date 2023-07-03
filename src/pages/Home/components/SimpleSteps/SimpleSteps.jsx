@@ -2,10 +2,11 @@ import React from 'react'
 import img from '../../../../assets/img/Vector-2251 (1).svg'
 import '../../home.css'
 import {FaAward} from 'react-icons/fa'
+import './step.css'
 
 const SimpleSteps = () => {
   return (
-    <div className='pt-28 pb-40 bg-zinc-900 mb-20'>
+    <div className='pt-28 pb-40 bg-zinc-900'>
 
         {/* ---------------this is heading------- */}
             <div className="mx-auto flex flex-col justify-center items-center text-center px-4 lg:px-0">
@@ -13,11 +14,16 @@ const SimpleSteps = () => {
                 <h2 className='text-[35px] font-semibold text-zinc-100 mt-5'>Rank Better With My SEO Strats</h2>
                 <p className='text-gray-100 mt-2 max-w-xl'>It takes only 4 steps to rank better and dominate the SERP.
                 </p>
+                <div className="mt-7">
+                <button className='get-start'>
+              Get Started
+             </button>
+                </div>
             </div>
 
              {/* ---------------this is steps------- */}
 
-            <div className="mx-w-5xl justify-center px-5 lg:pl-8 xl:pl-0 mx-auto mt-24 flex flex-col lg:flex-row   ">
+            <div className="mx-w-5xl justify-center px-5 lg:pl-8 xl:pl-0 mx-auto mt-20 flex flex-col lg:flex-row   ">
 
                <div className="relative">
                  <img className='hidden lg:block' src={img} alt="" />
