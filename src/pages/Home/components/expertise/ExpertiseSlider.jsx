@@ -64,7 +64,7 @@ const ExpertiseSlider = () => {
                         <img className='w-28 grayscale group-hover:grayscale-0' src={item.img} alt="" />
                     </div>
                     <div className="right">
-                        <h2 className='text-xl font-bold text-zink '>{item.name}</h2>
+                        <h2 className='text-[18px] font-semibold text-zink '>{item.name}</h2>
                         <p className='text-gray-500 mt-3'>{item.description}</p>
                     </div>
                 </div>
