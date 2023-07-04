@@ -1,6 +1,7 @@
 import AboutMe from "../About/AboutMe"
 import HomeBlog from "../Blog/Components/HomeBlog"
 import Company from "./components/Company/Company"
+import GetStarted from "./components/GetStarted/GetStarted"
 import SimpleSteps from "./components/SimpleSteps/SimpleSteps"
 import Testimonials from "./components/Testimonials/Testimonials"
 import WorkProcess from "./components/WorkProcess/WorkProcess"
@@ -18,6 +19,7 @@ const Home = () => {
      <WorkProcess></WorkProcess>
      <Testimonials></Testimonials>
      <HomeBlog></HomeBlog>
+     <GetStarted></GetStarted>
 
 
     </>
