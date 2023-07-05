@@ -3,7 +3,7 @@ import './getStated.css'
 
 const GetStarted = () => {
   return (
-    <div className='pt-8 pb-20 px-5 lg:px-0'>
+    <div className='pt-4 pb-20 px-5 lg:px-0'>
      
      <div className="parent-wrapper">
      

@@ -1,5 +1,6 @@
 import AboutMe from "../About/AboutMe"
 import HomeBlog from "../Blog/Components/HomeBlog"
+import HomeGetInTouch from "../Contact/HomeGetInTouch"
 import Company from "./components/Company/Company"
 import GetStarted from "./components/GetStarted/GetStarted"
 import SimpleSteps from "./components/SimpleSteps/SimpleSteps"
@@ -20,6 +21,7 @@ const Home = () => {
      <Testimonials></Testimonials>
      <HomeBlog></HomeBlog>
      <GetStarted></GetStarted>
+     <HomeGetInTouch></HomeGetInTouch>
 
 
     </>

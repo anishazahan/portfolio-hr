@@ -1,0 +1,31 @@
+.contact-heading{
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -0.9rem;
+        left: 0px;
+        right: -0.5rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: brown;
+        z-index: 1;
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.7rem;
+        left: 10px;
+        right: -0.5rem;
+        width: 30%;
+        height: 2px;
+        background-color: brown;
+        z-index: 1;
+         -webkit-animation: scale-in-hor-left 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+	        animation: scale-in-hor-left 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+    }
+}

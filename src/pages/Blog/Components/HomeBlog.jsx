@@ -19,7 +19,7 @@ const HomeBlog = () => {
                 {/* -------- blog card---------- */}
 
 
-                <div className="max-w-7x px-5 sm:px-10 md:px-5 xl:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
+                <div className="max-w-7xl px-5 sm:px-10 md:px-5 xl:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
 
                     {
                         data.map((item,index)=>{
