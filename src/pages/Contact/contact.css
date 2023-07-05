@@ -29,3 +29,21 @@
 	        animation: scale-in-hor-left 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
     }
 }
+
+.contact-blob{
+    position: relative;
+
+    
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 80%;
+        height: 80%;
+        background: url('../../assets/img/footer-blob.png')!important;
+      
+
+    }
+}

@@ -5,7 +5,7 @@ import {AiFillTwitterSquare,AiFillLinkedin,AiFillSkype} from 'react-icons/ai'
 
 const HomeGetInTouch = () => {
   return (
-    <div className=' py-20'>
+    <div className=' py-20 contact-blob'>
        
        <div className="max-w-7xl mx-auto px-5 xl:px-0 flex flex-col lg:flex-row items-center space-y-9 lg:space-y-0 justify-between">
             <div className="left w-full lg:w-[30%]">

@@ -1,0 +1,35 @@
+.footer-bg{
+    position: relative;
+   z-index: 10;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        width: 50%;
+        height: 50%;
+        /* transform: rotate(30%); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: url('../../assets/img/footer-1.svg')!important;
+      
+
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 50%;
+        height: 50%;
+        /* transform: rotate(30%); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: url('../../assets/img/footer-1.svg')!important;
+      
+
+    }
+}

@@ -3,19 +3,18 @@ import { Outlet } from 'react-router-dom'
 import './App.css'
 import Navbar from './shared/Navbar'
 import Banner from './pages/Home/components/Banner'
+import Footer from './shared/footer/Footer'
 
 function App() {
 
 
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
 
     <Outlet/>
     
-  {/* <div className="bg-gray-800 mx-auto py-5">
-  <h2 className='text-white text-center font-bold'>footer</h2>
-  </div> */}
+    <Footer></Footer>
     </>
   )
 }
