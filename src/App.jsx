@@ -1,22 +1,20 @@
+import { Outlet } from "react-router-dom";
+import "./App.css";
 
-import { Outlet } from 'react-router-dom'
-import './App.css'
-import Navbar from './shared/Navbar'
-import Banner from './pages/Home/components/Banner'
-import Footer from './shared/footer/Footer'
+import Banner from "./pages/Home/components/Banner";
+import Footer from "./shared/footer/Footer";
+import Navbar from "./shared/Navbar/Navbar";
 
 function App() {
-
-
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
 
-    <Outlet/>
-    
-    <Footer></Footer>
+      <Outlet />
+
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

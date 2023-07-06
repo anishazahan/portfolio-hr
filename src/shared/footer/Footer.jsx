@@ -11,9 +11,10 @@ const Footer = () => {
     <>
     
   
-<footer className=" pt-8 pb-10 bg-zinc-900">
+<footer className=" pt-8 pb-10 bg-zinc-900 ">
 {/* <ScrollToTop color='red'  className='text-secondary pl-2 py-3 pr-1 shadow border bg-cyan-100 w-10 h-10 text-sm' smooth top='2000' /> */}
-  <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+<div className="footer-bg">
+  <div className="max-w-screen-xl  px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
       <img src={logo} className="mr-5 h-20" alt="logo" />
@@ -146,7 +147,7 @@ Best Hosting (Cheap)</Link>
   <div className="">
     <p className='text-sm text-gray-300 text-center font-semibold'>&copy; Copyright 2023 All Rights Reserved by <span className='text-primary text-medium'>Limon</span></p>
   </div>
-
+  </div>
 </footer>
     
     

@@ -6,9 +6,9 @@ import { Link, useLocation } from 'react-router-dom'
 
 const HomeBanner = () => {
   return (
-    <>
+    <div className='Home-banner-bg'>
           <div className="max-w-7xl  px-5 lg:px-0 items-center flex flex-col-reverse lg:flex-row justify-between mx-auto mb-28">
-    <div className="left space-y-8 items-center h-full  bg-white">
+    <div className="left space-y-8 items-center h-full  ">
           <div className="space-y-5">
        <h1 className=' text-gray-800 text-5xl md:text-6xl lg:text-7xl font-bold'>Build And
           Grow </h1>
@@ -22,12 +22,12 @@ const HomeBanner = () => {
            <img className='spin hidden md:block' src={img2} alt="" />
           </div>
     </div>
-    <div className="left bg-gray-100 ">
+    <div className="left ">
        <img className='pt-12' src={img} alt="" />
     </div>
 </div>
 
-    </>
+    </div>
   )
 }
 

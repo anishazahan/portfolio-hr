@@ -20,7 +20,7 @@ const Home = () => {
      <WorkProcess></WorkProcess>
      <Testimonials></Testimonials>
      <HomeBlog></HomeBlog>
-     <GetStarted></GetStarted>
+     <GetStarted title={"BOOK A FREE CONSULTATION NOW!"}></GetStarted>
      <HomeGetInTouch></HomeGetInTouch>
 
 

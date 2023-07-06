@@ -1,0 +1,25 @@
+.navbar-bg{
+    background: linear-gradient(to right, white 45%, rgba(0,0,0,0.08) 55%);
+ 
+  }
+
+
+  .navbar-bg{
+    position: relative;
+    z-index: 10;
+
+  &::after {
+      content: url('../../assets/img/hrlimon-hero-shape-1.png');
+      position: absolute;
+      top: 0;
+      right: 0;
+      /* width: 80%; */
+      /* height: 100%; */
+      /* background: url('../../assets/img/hrlimon-hero-shape-1.png'); */
+      z-index: -10;
+      background-repeat: no-repeat;
+
+      
+  }
+  }
+

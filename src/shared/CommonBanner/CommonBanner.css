@@ -1,0 +1,62 @@
+.common-bg{
+    height: 65vh;
+}
+
+.bg-animation{
+    position: relative;
+    z-index: 10;
+
+    &::before{
+        content: url('../../assets/img/h1-vector-2.png');
+        position: absolute;
+        top: 30%;
+        left:20%;
+        z-index: 20;
+        /* width: 100%;
+        height: 100%; */
+       
+        background-repeat: no-repeat;
+        animation: bounce 6s infinite;
+
+    }
+
+    &::after{
+        content: url('../../assets/img/Polygon-4.png');
+        position: absolute;
+        top: 30%;
+        right:20%;
+        /* z-index: 30; */
+        /* width: 100%;
+        height: 100%; */
+        /* background: url('../../assets/img/Polygon-4.png'); */
+        background-repeat: no-repeat;
+        animation: spin 10s linear infinite;
+
+    }
+
+   
+}
+
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
