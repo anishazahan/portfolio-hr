@@ -26,7 +26,9 @@ const HomeBlog = () => {
                         data.map((item,index)=>{
                             const {id} = item
                             return <Link to={`/blog/${id}`} key={index} className="rounded-sm border shadow cursor-pointer">
-                                <img className='min-h-[274px]' src={item.img} alt="" />
+                               <div className="overflow-hidden">
+                               <img className='min-h-[274px] duration-500 hover:scale-110' src={item.img} alt="" />
+                               </div>
                                 <div className="p-5">
                                 <div className="flex  space-x-4 items-center">
                                     <div className="flex items-center space-x-2">

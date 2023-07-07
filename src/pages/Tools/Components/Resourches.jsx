@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from '../../../assets/img/tools-img-1.jpg'
 import img2 from '../../../assets/img/tools-img-2.jpg'
 import {BsArrowRightShort} from 'react-icons/bs'
+import 'aos/dist/aos.css';
 
 const Resourches = () => {
   return (
@@ -9,7 +10,7 @@ const Resourches = () => {
 
        <div className="max-w-7xl my-24 mx-auto px-5 xl:px-0 flex flex-col lg:flex-row justify-between items-center space-x-5 space-y-12 lg:space-y-0">
 
-        <div className="left w-full lg:w-[50%]">
+        <div  className="left w-full lg:w-[50%]">
            <div className="relative">
            <img className='w-full px-5' src={img1} alt="" />
            <img className='absolute right-0 top-[40%] md:hidden lg:block' src={img2} alt="" />

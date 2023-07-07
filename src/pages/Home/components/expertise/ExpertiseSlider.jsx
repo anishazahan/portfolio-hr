@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import '../../home.css'
+import 'aos/dist/aos.css';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -58,7 +59,9 @@ const ExpertiseSlider = () => {
           {
             data.map((item,index)=>{
               return  <SwiperSlide key={index}>
-               <div className="bg-white group py-6 px-3   md:min-h-56 lg:h-48 cursor-pointer border hover:shadow">
+               <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="bg-white group py-6 px-3   md:min-h-56 lg:h-48 cursor-pointer border hover:shadow">
                 <div className="flex  space-x-5 h-full">
                     <div className="left">
                         <img className='w-28 grayscale group-hover:grayscale-0' src={item.img} alt="" />

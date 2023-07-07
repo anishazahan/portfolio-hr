@@ -4,6 +4,7 @@ import img from '../../../assets/img/banner-3.png'
 import img2 from '../../../assets/img/Polygon-4.png'
 import { Link, useLocation } from 'react-router-dom'
 import {BsArrowRightShort} from 'react-icons/bs'
+import 'aos/dist/aos.css';
 
 const HomeBanner = () => {
   return (
@@ -26,7 +27,7 @@ const HomeBanner = () => {
            <img className='spin hidden md:block' src={img2} alt="" />
           </div>
     </div>
-    <div className="left lg:w-[50%] ">
+    <div data-aos="fade-down" className="left lg:w-[50%] ">
        <img className='pt-12 w-full min-h-[650px] object-cover' src={img} alt="" />
     </div>
 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import 'aos/dist/aos.css';
 
 const PhotoGallary = () => {
   return (
@@ -11,19 +12,29 @@ const PhotoGallary = () => {
     <div className='relative min-h-[85vh] pb-16'>
         
      <ul className="main-nav  my-24">
-  <li className="item1">
+  <li data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="item1">
     <div className="bg"></div>
   </li>
-  <li className="item2">
+  <li data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="item2">
     <div className="bg"></div>
   </li>
-  <li className="item3">
+  <li data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="item3">
     <div className="bg"></div>
   </li>
-  <li className="item4">
+  <li data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="item4">
     <div className="bg"></div>
   </li>
-  <li className="item5">
+  <li data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="item5">
     <div className="bg"></div>
   </li>
 </ul>

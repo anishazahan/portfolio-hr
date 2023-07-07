@@ -9,9 +9,20 @@ import SimpleSteps from "./components/SimpleSteps/SimpleSteps"
 import Testimonials from "./components/Testimonials/Testimonials"
 import WorkProcess from "./components/WorkProcess/WorkProcess"
 import ExperTiseArea from "./components/expertise/ExperTiseArea"
+import AOS from 'aos';
+import { useEffect } from "react";
 
 
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 600, // Animation duration
+      easing: 'ease-in-out', // Animation easing
+      once: true, // Animation will only occur once
+      mirror: false, // Animation will not mirror when scrolling back up
+    });
+  }, []);
   return (
     <>
 

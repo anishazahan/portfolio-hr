@@ -5,6 +5,8 @@ import Footer from "./shared/footer/Footer";
 import Navbar from "./shared/Navbar/Navbar";
 
 function App() {
+
+
   return (
     <>
       <Navbar/>
