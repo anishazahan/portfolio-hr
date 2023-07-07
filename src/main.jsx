@@ -11,12 +11,14 @@ import Tools from './pages/Tools/Tools.jsx'
 import SuccessStories from './pages/SuccessStories/SuccessStories.jsx'
 import Blog from './pages/Blog/Blog.jsx'
 import BlogDetails from './pages/Blog/Components/BlogDetails.jsx'
+import NotFound from './shared/NotFoundPage/NotFound.jsx'
 
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<App/>,
+    errorElement: <NotFound />,
     children:[
      
       {
