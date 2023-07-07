@@ -3,9 +3,7 @@ import TimeLine from './TimeLine'
 
 const WorkProcess = () => {
   return (
-    <div className='  py-24 bg-zinc-50'>
-
-
+    <div className='  py-24 bg-zinc-50 mb-16'>
 
        <div className=" flex flex-col justify-center items-center text-center px-4 lg:px-0">
             <h2 className='steps-heading uppercase font-semibold  tracking-wide text-zink'>MY WORK PROCESS</h2>

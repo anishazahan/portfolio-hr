@@ -1,4 +1,6 @@
 import AboutMe from "../About/AboutMe"
+import Members from "../About/Members"
+import PhotoGallary from "../About/PhotoGallary"
 import HomeBlog from "../Blog/Components/HomeBlog"
 import HomeGetInTouch from "../Contact/HomeGetInTouch"
 import Company from "./components/Company/Company"
@@ -18,9 +20,11 @@ const Home = () => {
      <ExperTiseArea></ExperTiseArea>
      <SimpleSteps></SimpleSteps>
      <WorkProcess></WorkProcess>
+     <PhotoGallary></PhotoGallary>
      <Testimonials></Testimonials>
      <HomeBlog></HomeBlog>
      <GetStarted title={"BOOK A FREE CONSULTATION NOW!"}></GetStarted>
+     <Members></Members>
      <HomeGetInTouch></HomeGetInTouch>
 
 

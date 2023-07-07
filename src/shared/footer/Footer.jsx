@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import logo from '../../assets/img/Screenshot_2023-07-01_144021-removebg-preview (1).png'
-// import ScrollToTop from "react-scroll-to-top";
+import ScrollToTop from "react-scroll-to-top";
 import {BiLogoFacebookSquare,BiSolidRightArrow} from 'react-icons/bi'
 import {AiFillTwitterSquare,AiFillLinkedin,AiFillSkype} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
@@ -12,9 +12,9 @@ const Footer = () => {
     
   
 <footer className=" pt-8 pb-10 bg-zinc-900 ">
-{/* <ScrollToTop color='red'  className='text-secondary pl-2 py-3 pr-1 shadow border bg-cyan-100 w-10 h-10 text-sm' smooth top='2000' /> */}
-<div className="footer-bg">
-  <div className="max-w-screen-xl  px-4 py-16 mx-auto sm:px-6 lg:px-8">
+<ScrollToTop color='red'  className='text-secondary pl-2 py-3 pr-1 shadow border bg-cyan-100 w-10 h-10 text-sm' smooth top='2000' />
+<div className="">
+  <div className="max-w-7xl  px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
       <img src={logo} className="mr-5 h-20" alt="logo" />
@@ -33,7 +33,6 @@ const Footer = () => {
           <p className="text-xl text-white font-semibold">
           Pages
           </p>
-          <div className="w-24  h-[2px] mt-1 bg-secondary"></div>
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-400">
             <div className="flex items-center space-x-1">
                 <button className='text-xl text-primary'><BiSolidRightArrow></BiSolidRightArrow></button>
@@ -64,7 +63,7 @@ const Footer = () => {
           <p className="text-xl text-white font-semibold">
           Resources
           </p>
-          <div className="w-24  h-[2px] mt-1 bg-secondary"></div>
+         
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-400">
             <div className="flex items-center space-x-1">
                 <button className='text-xl text-primary'><BiSolidRightArrow></BiSolidRightArrow></button>
@@ -93,7 +92,7 @@ const Footer = () => {
         <p className="text-xl text-white font-semibold">
         Recommend Tools
           </p>
-          <div className="w-24  h-[2px] mt-1 bg-secondary"></div>
+          
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-400">
             <div className="flex items-center space-x-1">
                 <button className='text-xl text-primary'><BiSolidRightArrow></BiSolidRightArrow></button>
@@ -129,7 +128,7 @@ Best Hosting (Cheap)</Link>
         <p className="text-xl text-white font-semibold">
           Legal
           </p>
-          <div className="w-24  h-[2px] mt-1 bg-secondary"></div>
+         
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
             <a className="hover:opacity-75" href> Privacy Policy </a>
             <a className="hover:opacity-75" href> Terms &amp; Conditions </a>

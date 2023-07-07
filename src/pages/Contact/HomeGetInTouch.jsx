@@ -20,7 +20,7 @@ const HomeGetInTouch = () => {
                     <button className='text-3xl  text-primary'><AiFillLinkedin></AiFillLinkedin></button>
                     <button className='text-3xl  text-primary'><AiFillSkype></AiFillSkype></button>
                 </div>
-                <button className='px-5 py-3 border-2 border-black text-sm text-zinc-800 rounded-sm font-bold'>Book a Free Consultation</button>
+                <button className='px-5 py-3 hover:text-primary cursor-pointer hover:border-primary border-2 border-black text-sm text-zinc-800 rounded-sm font-bold'>Book a Free Consultation</button>
                 </p>
                 </div>
             </div>
@@ -47,7 +47,7 @@ const HomeGetInTouch = () => {
 
                      <input className='border-b-2 mx-4 pl-3 mt-10 pb-1 border-gray-400 outline-none ' type="Email" required placeholder='Your Email' /> Thank you </p>
                     
-                    <input className='text-sm text-white bg-zinc-950 mt-16 px-6 py-[10px] rounded-sm font-medium' type="submit" value="Send Message" />
+                    <input className='text-sm text-white hover:bg-primary cursor-pointer bg-zinc-950 mt-16 px-6 py-[10px] rounded-sm font-medium' type="submit" value="Send Message" />
                 </div>
                 </form>
             </div>

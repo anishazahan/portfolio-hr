@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#E35950',
-        'zink':'color: rgb(39 39 42);'
+        'primary': 'brown',
+        'zink':'rgb(39 39 42)',
+        'secondary':'brown'
       },
     },
   },

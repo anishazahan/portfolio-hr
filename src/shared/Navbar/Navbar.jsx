@@ -28,7 +28,7 @@ const Navbar = () => {
                     : "font-semibold text-[17px] text-black hover:text-secondary"
                 }
               >
-                Expertise Area
+                Expertise 
               </NavLink>
             </li>
 
@@ -42,6 +42,18 @@ const Navbar = () => {
                 }
               >
                 Case Studies
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "border-b-2 border-primary pb-1 font-semibold text-[17px] text-black hover:text-secondary "
+                    : "font-semibold text-[17px] text-black hover:text-secondary"
+                }
+              >
+                About
               </NavLink>
             </li>
 
@@ -67,29 +79,18 @@ const Navbar = () => {
                     : "font-semibold text-[17px] text-black hover:text-secondary"
                 }
               >
-                Success Stories
+                Success 
               </NavLink>
             </li>
 
-            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? "border-b-2 border-primary pb-1 font-semibold text-[17px] text-black hover:text-secondary "
-                    : "font-semibold text-[17px] text-black hover:text-secondary"
-                }
-              >
-                About Me
-              </NavLink>
-            </li>
+           
 
             <li>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "border-b-2 border-primary pb-1 "
+                    ? "border-b-2 border-white pb-1 font-semibold text-[17px] "
                     : "font-bold text-[17px] text-black hover:text-secondary"
                 }
               >
@@ -102,7 +103,7 @@ const Navbar = () => {
                 to="/blog"
                 className={({ isActive }) =>
                   isActive
-                    ? "border-b-2 border-primary pb-1 "
+                    ? "border-b-2 border-white pb-1 font-semibold text-[17px] "
                     : "font-bold text-[17px] text-black hover:text-secondary"
                 }
               >
@@ -123,7 +124,7 @@ const Navbar = () => {
               <button
                 onClick={() => setIsMenuOpen(true)}
                 htmlFor="my-drawer"
-                className="drawer-button flex items-end text-secondary text-3xl text-black-600 p-3"
+                className="drawer-button flex items-end text-white text-3xl text-black-600 p-3"
               >
                 <AiOutlineMenuUnfold></AiOutlineMenuUnfold>
               </button>
@@ -162,59 +163,106 @@ const Navbar = () => {
                 </button>
               </div>
               <div>
-                <ul className="space-y-3 text-center">
-                  <li>
-                    <NavLink
-                      to="/about"
-                      className={({ isActive }) =>
-                        isActive
-                          ? "border-b-2 border-primary pb-1 font-semibold text-[17px] text-black hover:text-secondary "
-                          : "font-semibold text-[17px] text-black hover:text-secondary"
-                      }
-                    >
-                      About Us
-                    </NavLink>
-                  </li>
+              <ul className="text-center space-y-3">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-white text-white pb-1 font-semibold text-[17px] hover:text-secondary "
+                    : "font-semibold text-[17px] text-white hover:text-white"
+                }
+              >
+                Expertise Area
+              </NavLink>
+            </li>
 
-                  <li>
-                    <NavLink
-                      to="/services"
-                      className={({ isActive }) =>
-                        isActive
-                          ? "border-b-2 border-primary pb-1 font-semibold text-[17px] text-black hover:text-secondary "
-                          : "font-semibold text-[17px] text-black hover:text-secondary"
-                      }
-                    >
-                      Services
-                    </NavLink>
-                  </li>
+            <li>
+              <NavLink
+                to="/case-studies"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-white text-white pb-1 font-semibold text-[17px] hover:text-secondary "
+                    : "font-semibold text-[17px] text-white hover:text-white"
+                }
+              >
+                Case Studies
+              </NavLink>
+            </li>
 
-                  <li>
-                    <NavLink
-                      to="/books"
-                      className={({ isActive }) =>
-                        isActive
-                          ? "border-b-2 border-primary pb-1 font-semibold text-[17px] text-black hover:text-secondary "
-                          : "font-semibold text-[17px] text-black hover:text-secondary"
-                      }
-                    >
-                      Books
-                    </NavLink>
-                  </li>
+            <li>
+              <NavLink
+                to="/tools"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-white text-white pb-1 font-semibold text-[17px] hover:text-secondary "
+                    : "font-semibold text-[17px] text-white hover:text-white"
+                }
+              >
+                Tools
+              </NavLink>
+            </li>
 
-                  <li>
-                    <NavLink
-                      to="/contact"
-                      className={({ isActive }) =>
-                        isActive
-                          ? "border-b-2 border-primary pb-1 "
-                          : "font-bold text-[17px] text-black hover:text-secondary"
-                      }
-                    >
-                      Contact
-                    </NavLink>
-                  </li>
-                </ul>
+            <li>
+              <NavLink
+                to="/success-stories"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-white text-white pb-1 font-semibold text-[17px]  hover:text-secondary "
+                    : "font-semibold text-[17px] text-white hover:text-white"
+                }
+              >
+                Success Stories
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-white text-white pb-1 font-semibold text-[17px] hover:text-secondary "
+                    : "font-semibold text-[17px] text-white hover:text-white"
+                }
+              >
+                About Me
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-white text-white  pb-1 font-semibold text-[17px] "
+                    : "font-bold text-[17px] text-white hover:text-white"
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 border-white text-white pb-1 font-semibold text-[17px] "
+                    : "font-bold text-[17px] text-white hover:text-white"
+                }
+              >
+                Blog
+              </NavLink>
+            </li>
+
+            <div className="pt-10 xl:pt-0">
+              {/* <CommonBtn></CommonBtn> */}
+              <button className="py-3 px-8 hover:bg-white hover:border hover:border-black hover:text-black duration-200 bg-black text-white font-medium">
+                Go To YT{" "}
+              </button>
+            </div>
+          </ul>
+
               </div>
               <div className="mt-auto"></div>
             </nav>

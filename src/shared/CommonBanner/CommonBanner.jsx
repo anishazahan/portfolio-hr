@@ -9,7 +9,7 @@ const CommonBanner = (props) => {
     <div className='h-[60vh]'>
       <div className="bg-animation max-w-7xl mx-auto flex flex-col w-full space-y-3 justify-center items-center h-full">
       <p className='font-bold text-primary'>{name}</p>
-        <h2 className='text-2xl tracking-wide  font-bold'>{title}</h2>
+        <h2 className='text-2xl px-4 text-center tracking-wide  font-bold'>{title}</h2>
       </div>
 
     </div>

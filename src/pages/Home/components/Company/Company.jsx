@@ -33,7 +33,7 @@ const Company = () => {
             spaceBetween: 50,
           },
         }}
-        navigation={true}
+       
         modules={[Autoplay]}
         className="mySwiper"
       >

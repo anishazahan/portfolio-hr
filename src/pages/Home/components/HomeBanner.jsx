@@ -3,6 +3,7 @@ import '../home.css'
 import img from '../../../assets/img/banner-3.png'
 import img2 from '../../../assets/img/Polygon-4.png'
 import { Link, useLocation } from 'react-router-dom'
+import {BsArrowRightShort} from 'react-icons/bs'
 
 const HomeBanner = () => {
   return (
@@ -17,8 +18,11 @@ const HomeBanner = () => {
        </div>
           <p className='max-w-2xl tracking-wider text-gray-500 text-center lg:text-left'>Are you struggling to outsmart your competition and grow an online business that makes you serious money? I’ve built dozens; enough to know what works and what don’t.</p>
           <div className=" flex flex-col md:flex-row space-y-5 md:space-y-0 lg:items-center justify-between">
-           <button className='font-medium text-white py-3 px-8 rounded-md bg-pink-800'>Get Free Consultation</button>
-           <Link className='text-center md:text-left about' to='/about'>Learn More About Me</Link>
+           <button className='font-medium bg-black text-white py-3 px-8 rounded-sm hover:bg-primary'>Get Free Consultation</button>
+           <Link to='/about' className="flex items-center space-x-1">
+                        <button>Learn More</button>
+                        <BsArrowRightShort className='text-3xl'></BsArrowRightShort>
+                    </Link>
            <img className='spin hidden md:block' src={img2} alt="" />
           </div>
     </div>
