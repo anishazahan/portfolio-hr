@@ -18,7 +18,7 @@ const Navbar = () => {
             <img className="w-52" src={logo} alt="" />
           </Link>
 
-          <ul className="hidden  lg:flex  lg:items-center lg:space-x-8">
+          <ul className="hidden  xl:flex  xl:items-center xl:space-x-8">
             <li>
               <NavLink
                 to="/"
@@ -118,7 +118,7 @@ const Navbar = () => {
             </div>
           </ul>
 
-          <div className="lg:hidden ">
+          <div className="xl:hidden ">
             <div className="">
               <button
                 onClick={() => setIsMenuOpen(true)}
@@ -134,7 +134,7 @@ const Navbar = () => {
         {/* // for mobile */}
 
         {isMenuOpen && (
-          <div className=" navbar-menu relative z-50 lg:hidden">
+          <div className=" navbar-menu relative z-50 xl:hidden">
             <div className=" fixed inset-0 bg-gray-800 "></div>
             <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-primary border-r overflow-y-auto">
               <div className="flex items-center mb-8">

@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../assets/img/hrlimon-about-imge.png'
+import img from '../../assets/img/about-img.png'
 import './about.css'
 
 const AboutMe = () => {
@@ -7,11 +7,11 @@ const AboutMe = () => {
     <div>
       
       <div id='aboutme' className="max-w-7xl px-4 xl:px-0 mx-auto mb-20">
-        <div className="flex justify-between items-center flex-col lg:flex-row space-x-6">
-            <div className="left w-full lg:w-[50%]">
-                <img src={img} alt="" />
+        <div className="flex justify-between items-center flex-col lg:flex-row  space-y-10 lg:space-y-0">
+            <div className="left w-full lg:w-[50%] bg-gray-200 ">
+                <img className='w-full h-full' src={img} alt="" />
             </div>
-            <div className="right w-full lg:w-[50%]">
+            <div className="right w-full lg:w-[50%] pl-8">
                 <h2 className='about-heading uppercase font-semibold text-xl tracking-wide text-gray-800'>LITTLE ABOUT ME</h2>
                 <h2 className='text-[39px] font-bold text-zinc-800 mt-7'>A Serial Entrepreneur Who Does Wonders</h2>
                 <p className='text-gray-500 mt-5'>Howdy there, this is Habibur Rahman, a serial online entrepreneur with multiple successful milestones passed. I’ve been building businesses and helping others do the same for over 8 years now.
