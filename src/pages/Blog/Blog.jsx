@@ -1,11 +1,12 @@
 import React from 'react'
+import HomeBlog from './Components/HomeBlog'
 
 const Blog = () => {
   return (
-    <div>
-     <h2>blog</h2>
+    <>
+     <HomeBlog></HomeBlog>
         
-    </div>
+    </>
   )
 }
 

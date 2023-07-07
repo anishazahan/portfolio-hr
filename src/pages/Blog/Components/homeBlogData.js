@@ -6,6 +6,7 @@ import img3 from '../../../assets/img/homeBlog3.png'
 
 export const data = [
     {
+      id:1,
       author:"Habibur Rahman",
       date:"May 24, 2023",
       title:"Bramework Lifetime Deal: Boost Your AI Writing for Content",
@@ -13,6 +14,7 @@ export const data = [
       img:img1
     },
     {
+      id:2,
       author:"Habibur Rahman",
       date:"May 24, 2023",
       title:"Bramework Lifetime Deal: Boost Your AI Writing for Content",
@@ -20,6 +22,7 @@ export const data = [
       img:img2
     },
     {
+      id:3,
       author:"Habibur Rahman",
       date:"May 24, 2023",
       title:"Bramework Lifetime Deal: Boost Your AI Writing for Content",

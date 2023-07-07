@@ -3,7 +3,7 @@ import img from '../../assets/img/map-img.png'
 
 const MainContact = () => {
   return (
-    <div className='max-w-6xl px-5 xl:px-0 mx-auto mt-10 lg:mt-0 lg:my-28'>
+    <div className='max-w-6xl px-5 xl:px-0 mx-auto mt-10  lg:my-28'>
 
   <h2 className='text-3xl font-bold '>Let’s Schedule A Meeting</h2>
   <p className='text-gray-500 max-w-xl pt-5 pb-10'>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>

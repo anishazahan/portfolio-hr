@@ -19,6 +19,7 @@ const Banner = () => {
          location.pathname==="/success-stories"? <CommonBanner name={"Success-Stories"} title={"Withness My Success Journey"}></CommonBanner> : 
          location.pathname==="/contact"? <CommonBanner name={"Contact"} title={"Connect With Me"}></CommonBanner> : 
          location.pathname==="/blog"? <CommonBanner name={"Blog"} title={"Blog articles about SEO,deals,marketing and Growth"}></CommonBanner> : 
+         (location.pathname==="/blog/1" || location.pathname==="/blog/2" || location.pathname==="/blog/3")? <CommonBanner name={"Blog"} title={"Blog Details"}></CommonBanner> : 
          
          <HomeBanner></HomeBanner>
       }

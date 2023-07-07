@@ -10,6 +10,7 @@ import CaseStudies from './pages/CaseStudies/CaseStudies.jsx'
 import Tools from './pages/Tools/Tools.jsx'
 import SuccessStories from './pages/SuccessStories/SuccessStories.jsx'
 import Blog from './pages/Blog/Blog.jsx'
+import BlogDetails from './pages/Blog/Components/BlogDetails.jsx'
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path:'/blog',
         element: <Blog></Blog>
+      },
+      {
+        path:'/blog/:id',
+        element: <BlogDetails></BlogDetails>
       },
      
     ]

@@ -2,6 +2,7 @@ import React from 'react'
 import {data} from './homeBlogData.js'
 import {BiSolidUserCircle} from "react-icons/bi"
 import {BsCalendarDateFill} from "react-icons/bs"
+import { Link } from 'react-router-dom'
 const HomeBlog = () => {
   return (
     <div className=''>
@@ -23,29 +24,30 @@ const HomeBlog = () => {
 
                     {
                         data.map((item,index)=>{
-                            return <div key={index} className="rounded-sm border shadow cursor-pointer">
+                            const {id} = item
+                            return <Link to={`/blog/${id}`} key={index} className="rounded-sm border shadow cursor-pointer">
                                 <img className='min-h-[274px]' src={item.img} alt="" />
                                 <div className="p-5">
                                 <div className="flex  space-x-4 items-center">
                                     <div className="flex items-center space-x-2">
                                         <button className='text-xl text-zinc-500'><BiSolidUserCircle></BiSolidUserCircle></button>
-                                        <p className='text-xs font-thin text-gray-700'>{item.author}</p>
+                                        <p className='text-xs font-thin text-gray-500'>{item.author}</p>
                                     </div>
                                     <div className="flex items-center space-x-2">
                                         <button className='text-[18px] text-zinc-500'><BsCalendarDateFill></BsCalendarDateFill></button>
-                                        <p className='text-xs font-thin text-gray-700'>{item.author}</p>
+                                        <p className='text-xs font-thin text-gray-500'>{item.date}</p>
                                     </div>
                                 </div>
 
 
-                                <h2 className='text-xl font-bold py-3 text-zinc-900'>{item.title}</h2>
+                                <h2 className='text-xl font-bold hover:underline py-3 text-zinc-900'>{item.title}</h2>
                                 <p className='text-sm text-gray-600 mt-1 mb-3'>{item.description}</p>
 
                                 <div className="flex justify-end pb-5 ">
                                     <button className='px-8 rounded-sm hover:bg-primary duration-150 py-[10px] text-gray-100 font-semibold bg-black'>Deals</button>
                                 </div>
                                 </div>
-                            </div>
+                            </Link>
                         })
                     }
 
